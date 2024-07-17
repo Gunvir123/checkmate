@@ -1,0 +1,143 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 70vw;
+    margin: 20px auto;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.card-text {
+    color: #ccc;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.btn-success {
+    background-color: #4caf50;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    border: none;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.icon-edit {
+    color: #ffc107;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #f0f0f0;
+    /* Light gray with a hint of blue */
+    color: #000;
+    border-radius: 8px;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.form-label {
+    color: #000;
+}
+
+.form-control {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-range {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.Toastify__toast {
+    background-color: #333;
+    color: #1b1919;
+    border-radius: 8px;
+}
+
+.Toastify__toast--success {
+    background-color: #d5ebd6;
+}
+
+.Toastify__toast--error {
+    background-color: #bfb1b0;
+}
+
+.add-course-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-course-btn:hover {
+    background-color: #0056b3;
+}
+
+.field-card {
+    background-color: #e0e0e0;
+    /* Slightly darker than the modal background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Adjust timing and easing as needed */
+}
+
+.chart-container.show {
+    opacity: 1;
+}
+
+
+
+/* custom-toast.css */
