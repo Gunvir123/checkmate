@@ -2,6 +2,7 @@ const subjectModel = require("../models/subjectModel")
 const attendanceModel = require("../models/attendanceModel")
 const nodemailer = require("nodemailer");
 const { getMaxListeners } = require("../models/userModel");
+const userModel = require("../models/userModel");
 
 
 const getSubjectsForAlerts = async (req, res) => {
@@ -28,7 +29,8 @@ const getSubjectsForAlerts = async (req, res) => {
 
         }
 
-        let email = localStorage.getItem("email");
+        let user = await userModel.findOne({ userId: id });
+        let email = user.email;
         for (subject of subjectsWithAlerts) {
             sendEmail(email, subject.subjectName);
         }
