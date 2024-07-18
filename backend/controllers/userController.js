@@ -110,7 +110,7 @@ const updateUser = async (req, res) => {
 }
 
 
-const sendEmail = () => {
+const sendEmail = (to) => {
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
 
@@ -122,7 +122,7 @@ const sendEmail = () => {
     });
 
     // async..await is not allowed in global scope, must use a wrapper
-    async function main(to) {
+    async function main() {
         // send mail with defined transport object
         const info = await transporter.sendMail({
             from: '<gsingh13_be21@thapar.edu>', // sender address
