@@ -8,6 +8,9 @@ const userModel = require("../models/userModel");
 const getSubjectsForAlerts = async (req, res) => {
     try {
         const id = req.params.id;
+        //console.log("user id is", id);
+        const user = await userModel.findOne({ _id: id });
+        console.log('user details are', user);
         // Fetch all subjects
         const subjects = await subjectModel.find({ userId: id });
 
@@ -29,7 +32,6 @@ const getSubjectsForAlerts = async (req, res) => {
 
         }
 
-        let user = await userModel.findOne({ userId: id });
         let email = user.email;
         for (subject of subjectsWithAlerts) {
             sendEmail(email, subject.subjectName);
