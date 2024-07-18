@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Login.css'; // Import custom styles for LoginForm
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 const Login = () => {
 
 
@@ -70,6 +70,7 @@ const Login = () => {
                 <button type="submit" className="btn btn-primary btn-block">
                     Sign In
                 </button>
+                <p className='text-danger'>Not registered ? <Link to={'/'}>Register</Link></p>
             </form>
         </div>
     );

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './Login.css'; // Import custom styles for LoginForm
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Register = () => {
 
@@ -73,6 +73,7 @@ const Register = () => {
                 <button type="submit" className="btn btn-primary btn-block">
                     Sign Up
                 </button>
+                <p className='text-danger'>Already registered? <Link to={'/login'}>Login</Link></p>
             </form>
         </div>
     );
