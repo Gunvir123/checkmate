@@ -69,21 +69,21 @@ const Dashboard = () => {
                     <div class="card p-4 " style={{ height: '20vh', width: '15vw', marginLeft: '320px' }}>
                         <div class="card-body">
 
-                            <h6 className='text-white' style={{ position: 'absolute', top: '10px', left: '20px' }}>Courses Enrolled</h6>
+                            <h6 className='text-success ' style={{ position: 'absolute', top: '10px', left: '50px' }}>Courses Enrolled</h6>
                             <h4 className='text-white' style={{ position: 'absolute', top: '65px', left: '100px' }}>{coursesEnrolled} </h4>
                         </div>
                     </div>
 
                     <div class="card p-4 " style={{ height: '20vh', width: '15vw', marginLeft: '40px' }}>
                         <div class="card-body">
-                            <h6 className='text-white' style={{ position: 'absolute', top: '10px', left: '20px' }}>Classes Today</h6>
+                            <h6 className='text-info' style={{ position: 'absolute', top: '10px', left: '55px' }}>Classes Today</h6>
                             <h4 className='text-white' style={{ position: 'absolute', top: '65px', left: '100px' }}>{todayCourses} </h4>
                         </div>
                     </div>
 
                     <div class="card p-4 " style={{ height: '20vh', width: '15vw', marginLeft: '40px' }}>
                         <div class="card-body">
-                            <h6 className='text-white' style={{ position: 'absolute', top: '10px', left: '20px' }}>Short Courses</h6>
+                            <h6 className='text-danger' style={{ position: 'absolute', top: '10px', left: '55px' }}>Short Courses</h6>
                             <h4 className='text-white' style={{ position: 'absolute', top: '65px', left: '100px' }}>{alerts} </h4>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ const Dashboard = () => {
 
                 <div className='d-flex' >
 
-                    <div class="card p-4 " style={{ height: '70vh', width: '50vw', marginLeft: '320px' }}>
+                    <div class="card p-4 " style={{ height: '100%', width: '50vw', marginLeft: '320px' }}>
                         <div class="card-body">
                             <SubjectsChart subjects={charts} />
                         </div>
@@ -101,7 +101,7 @@ const Dashboard = () => {
 
                     <div class="card p-4 " style={{ height: '100%', width: '20vw', marginLeft: '40px' }}>
                         <div className='text-center'>
-                            <div className='text-white'>{day}</div>
+                            <div className='text-warning'>{day}</div>
                         </div>
 
                         {timeTable.map((subject, index) => (<div class="card-body">
