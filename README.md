@@ -16,7 +16,7 @@ CheckMate is a user-friendly self-attendance management system built for student
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Visualization**: Chart.js
-  ## Usage
+## Usage
 Once the application is up and running:
 
 1. **Sign up** for an account and log in.
@@ -24,7 +24,8 @@ Once the application is up and running:
 3. **Track attendance** in each course with visual indicators showing your progress.
 4. **Monitor trends** using the dynamic charts provided, helping you understand how your attendance is shaping up over time.
 5. **Update courses or attendance records** as needed through the user-friendly interface.
-
+   
+## Reference Images
 ![image](https://github.com/user-attachments/assets/5493a333-e8d2-4be3-960f-528cb2720efa)
 
 
